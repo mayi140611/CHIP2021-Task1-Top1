@@ -744,7 +744,7 @@ for fold_, (train_ids, dev_ids) in enumerate(kf.split(examples)):
               tm_dev_dataset,
               lr=2e-5,
               epochs=2, 
-              batch_size=64,
+              batch_size=16,
               params=optimizer_grouped_parameters,
               evaluate_save=True,
               save_module_path='../checkpoint/macbert2-f/' + str(fold_) + '.pth'
